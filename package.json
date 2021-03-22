@@ -3,6 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "postinstall": "ng build --prod",
+    "heroku-prebuild": "npm install -f",
+    "heroku-postbuild": "npm run build",
     "ng": "ng",
     "start": "node server.js",
     "build": "ng build",
