@@ -6,5 +6,3 @@ app.use(express.static(_dirname + '/dist/nombre-proyecto'));
 app.get('/', function(req,res){
     res.sendFile(path.join(__dirname+'/dist/nombre-proyecto/index.html'));
 });
-
-app.listen(process.env.PORT || 8080);
